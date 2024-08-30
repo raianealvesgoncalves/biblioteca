@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <div id="divPrincipal">
+        <table id="lista-Livros">
+            <tr style="text-align: center;" class="fim-cabecalho">
+                <th style="width: 2rem">Id</th>
+                <th>Titulo <br> <input type="text" id="pesqTitulo" onkeyup="pesquisar(this)" placeholder="Procurar por Titulo"></th>
+                <th>Autor <br> <input type="text" id="pesqAutor" onkeyup="pesquisar(this)" placeholder="Procurar por Autor"></th>
+                <th>Genero <br> <input type="text" id="pesqGenero" onkeyup="pesquisar(this)" placeholder="Procurar por Genero"></th>
+                <th style="width: 4rem"></th>
+            </tr>
+        </table>
+        <div class="textoDireita">
+            <button class="botao Adicionar-Livro" onclick="modal_show({ action: 'create' })">Adicionar Livro</button>
+        </div>
+    </div>
+    
+    <div id="modal_Criar-Atualizar">
+        <span class="modalSpan">&times;</span>
+        <div id="form">
+            <div class="grupo_form">
+                <label for="inputTitulo">Titulo: </label>
+                <input type="text" name="inputTitulo" id="inputTitulo">
+            </div>
+            <div class="grupo_form">
+                <label for="inputAutor">Autor: </label>
+                <input type="text" name="inputAutor" id="inputAutor">
+            </div>
+            <div class="grupo_form">
+                <label for="inputGenero">Genero: </label>
+                <input type="text" name="inputGenero" id="inputGenero">
+            </div>
+            <button id="botao_Criar-Atualizar" class="botao">Guardar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
