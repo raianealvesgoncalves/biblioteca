@@ -1,0 +1,17 @@
+@import url(assets/css/create-update.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    font-family: sans-serif;
+    --Texto: #040316;
+    --Fundo: #f9f7ec;
+    --Primaria: #bacbb9;
+    --Secundaria: #e6dac7;
+    --Accent: #597d6c;
+    --ListaClaro: #E9E9E9;
+    --ListaEscuro: #D9D9D9;
+}
